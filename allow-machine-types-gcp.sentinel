@@ -1,0 +1,15 @@
+import "tfplan"
+
+allowed_machine_types = []
+  "n1-standard-1",
+  "f1-micro",
+]
+
+main = rule {
+  all tfplan.resources.google_compute_instance as _, instances {
+    all instances as _, r {
+      r.applied.machine_type in allowed_machine_types
+    }
+  }
+}
+

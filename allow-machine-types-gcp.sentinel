@@ -26,7 +26,7 @@ find_resources = func(type) {
 # all GCE instances have machine types from an allowed list
 
 # Import the v2 tfplan import, but use the alias "tfplan"
-import "tfplan/v2" as tfplan
+#import "tfplan/v2" as tfplan
 
 # Import common-functions/tfplan-functions.sentinel with alias "plan"
 import "plan"

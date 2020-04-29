@@ -23,5 +23,5 @@ policy "restrict-publishers-of-current-vms" {
 }
 
 policy "restrict-vm-size" {
-    enforcement_level = "advisory"
+    enforcement_level = "soft-mandatory"
 }
